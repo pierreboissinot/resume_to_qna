@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  p #{title} allows you to convert a JSON Resume into a qna.tsv file that you can use as a knowledge database for Microsoft QnA Maker (cognitive service).
+  p QnA is only written in french at the moment.
+  p Instructions
+  ol 
+    li Select your JSON Resume file.
+    li Click on "Convert".
+    li Download your qna.tsv file
+  form(action='/',  method='post', enctype='multipart/form-data', id='filedrag')
+    fieldset
+      legend resume.json to qna.tsv
+      div(class='input-group')
+        input(type='file', id='file-input', name='resumejson', accept='.json', required)
+        label(for='file-input', class="button") 
+          i(class='fa fa-upload', aria-hidden='true')
+          | Upload file...
+    button(type='submit', class='button primary') Convert

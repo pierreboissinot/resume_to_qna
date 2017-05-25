@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div(class='error')
+    h1 Error
+    h2= message
+
+  a(class='button secondary', href='/')
+    i(class='fa fa-back', aria-hidden='true')
+    | Go Back

@@ -1,0 +1,10 @@
+.error {
+  color: red;
+}
+
+.left-icon {
+  font-size: 1.3em; 
+  position: relative; 
+  bottom: -2px; 
+  margin-right: 2px;
+}

@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='shortcut icon', href='/favicon.ico')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/mini-default.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body
+    include includes/header.pug
+    block content
+    include includes/footer.pug
